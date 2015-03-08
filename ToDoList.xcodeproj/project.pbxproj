@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6E957BF71AA89BE30042323A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E957BF61AA89BE30042323A /* main.m */; };
 		6E957BFA1AA89BE30042323A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E957BF91AA89BE30042323A /* AppDelegate.m */; };
-		6E957BFD1AA89BE30042323A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E957BFC1AA89BE30042323A /* ViewController.m */; };
 		6E957C001AA89BE30042323A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E957BFE1AA89BE30042323A /* Main.storyboard */; };
 		6E957C021AA89BE30042323A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E957C011AA89BE30042323A /* Images.xcassets */; };
 		6E957C051AA89BE30042323A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E957C031AA89BE30042323A /* LaunchScreen.xib */; };
 		6E957C111AA89BE30042323A /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E957C101AA89BE30042323A /* ToDoListTests.m */; };
+		6E957C1C1AAC987E0042323A /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E957C1B1AAC987E0042323A /* AddToDoItemViewController.m */; };
+		6E957C1F1AACA1690042323A /* ToDoListTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E957C1E1AACA1690042323A /* ToDoListTableTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		6E957BF61AA89BE30042323A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E957BF81AA89BE30042323A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E957BF91AA89BE30042323A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E957BFB1AA89BE30042323A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E957BFC1AA89BE30042323A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6E957BFF1AA89BE30042323A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E957C011AA89BE30042323A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6E957C041AA89BE30042323A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6E957C0A1AA89BE30042323A /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E957C0F1AA89BE30042323A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E957C101AA89BE30042323A /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		6E957C1A1AAC987E0042323A /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
+		6E957C1B1AAC987E0042323A /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
+		6E957C1D1AACA1690042323A /* ToDoListTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToDoListTableTableViewController.h; path = ToDoList/ToDoListTableTableViewController.h; sourceTree = "<group>"; };
+		6E957C1E1AACA1690042323A /* ToDoListTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToDoListTableTableViewController.m; path = ToDoList/ToDoListTableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,10 @@
 		6E957BE81AA89BE30042323A = {
 			isa = PBXGroup;
 			children = (
+				6E957C1A1AAC987E0042323A /* AddToDoItemViewController.h */,
+				6E957C1B1AAC987E0042323A /* AddToDoItemViewController.m */,
+				6E957C1D1AACA1690042323A /* ToDoListTableTableViewController.h */,
+				6E957C1E1AACA1690042323A /* ToDoListTableTableViewController.m */,
 				6E957BF31AA89BE30042323A /* ToDoList */,
 				6E957C0D1AA89BE30042323A /* ToDoListTests */,
 				6E957BF21AA89BE30042323A /* Products */,
@@ -83,8 +90,6 @@
 			children = (
 				6E957BF81AA89BE30042323A /* AppDelegate.h */,
 				6E957BF91AA89BE30042323A /* AppDelegate.m */,
-				6E957BFB1AA89BE30042323A /* ViewController.h */,
-				6E957BFC1AA89BE30042323A /* ViewController.m */,
 				6E957BFE1AA89BE30042323A /* Main.storyboard */,
 				6E957C011AA89BE30042323A /* Images.xcassets */,
 				6E957C031AA89BE30042323A /* LaunchScreen.xib */,
@@ -219,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E957BFD1AA89BE30042323A /* ViewController.m in Sources */,
 				6E957BFA1AA89BE30042323A /* AppDelegate.m in Sources */,
 				6E957BF71AA89BE30042323A /* main.m in Sources */,
+				6E957C1F1AACA1690042323A /* ToDoListTableTableViewController.m in Sources */,
+				6E957C1C1AAC987E0042323A /* AddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +354,7 @@
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -358,6 +365,7 @@
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
