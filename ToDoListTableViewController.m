@@ -1,18 +1,18 @@
 //
-//  ToDoListTableTableViewController.m
+//  ToDoListTableViewController.m
 //  ToDoList
 //
-//  Created by Qiaofu on 15/3/8.
+//  Created by Qiaofu on 15/3/21.
 //  Copyright (c) 2015年 Qiaofu. All rights reserved.
 //
 
-#import "ToDoListTableTableViewController.h"
+#import "ToDoListTableViewController.h"
 
-@interface ToDoListTableTableViewController ()
+@interface ToDoListTableViewController ()
 
 @end
 
-@implementation ToDoListTableTableViewController
+@implementation ToDoListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
