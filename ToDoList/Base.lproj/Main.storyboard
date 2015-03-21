@@ -32,18 +32,27 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add To-Do Item" id="AXX-Af-DQq">
-                        <barButtonItem key="leftBarButtonItem" title="取消" id="zmR-XL-ofA"/>
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="yCn-1I-OP9"/>
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="zmR-XL-ofA">
+                            <connections>
+                                <segue destination="NOx-wK-NQy" kind="unwind" unwindAction="unwindToList:" id="B8v-HM-rzz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="yCn-1I-OP9">
+                            <connections>
+                                <segue destination="NOx-wK-NQy" kind="unwind" unwindAction="unwindToList:" id="pFe-ii-lOZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="NOx-wK-NQy" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1739" y="339"/>
         </scene>
         <!--To-Do List-->
         <scene sceneID="KLK-ph-5Eu">
             <objects>
-                <tableViewController id="CaF-vz-Q5n" customClass="ToDoListTableTableViewController" sceneMemberID="viewController">
+                <tableViewController id="CaF-vz-Q5n" customClass="ToDoListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4Jh-Mg-2B5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
